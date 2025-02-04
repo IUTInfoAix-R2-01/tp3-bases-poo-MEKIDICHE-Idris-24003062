@@ -1,3 +1,4 @@
+package exercice_Livre;
 
 public class Livre {
 	private String name;
@@ -12,14 +13,14 @@ public class Livre {
 	public String getName() {
 		return name;
 	}
-	public double getprice() {
+	public double getPrice() {
 		return price;
 	}
-	public int getquantite() {
+	public int getQuantite() {
 		return quantite;
 	}
 
 	public String toString() {
-		return " le livre est" + name + " le prix est de " + price + " la quantité est de " + quantite;
+		return "Le livre est " + name + " le prix est de " + price + " la quantité est de " + quantite;
 	}
 }
