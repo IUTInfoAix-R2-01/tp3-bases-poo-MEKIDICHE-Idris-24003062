@@ -7,6 +7,7 @@ public class testLivre {
 		System.out.println (livre.getName());
 		System.out.println (livre.getPrice());
 		System.out.println (livre.getQuantite());
+		livre.setQuantite(12);
 		System.out.println (livre);
 	}
 }
