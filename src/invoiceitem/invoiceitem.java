@@ -6,9 +6,36 @@ public class invoiceitem {
 	private int qty;
 	private double unitPrice;
 	
-	public Employee (String id, String desc, int qty, double unitPrice){
+	public invoiceitem (String id, String desc, int qty, double unitPrice){
 		this.id = id;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.salary = salary;
+		this.desc = desc;
+		this.qty = qty;
+		this.unitPrice = unitPrice;
+	}
+	
+	public String getId() {
+		return id;
+	}
+	public String getDesc() {
+		return desc;
+	}
+	public int getQty() {
+		return qty;
+	}
+	public void setQty(int qty) {
+		this.qty = qty;
+	}
+	public double getUnitPrice() {
+		return unitPrice;
+	}
+	public void setUnitPrice(double unitPrice) {
+		this.unitPrice = unitPrice;
+	}
+	public double getTotal() {
+		return unitPrice * qty;
+	}
+	public String toString () {
+		return "InvoiceItem[id="+ id+",desc="+desc+",qty="+qty+",unitPrice="+unitPrice+']';
+	}
 }
+ 
